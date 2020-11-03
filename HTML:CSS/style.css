@@ -1,0 +1,9 @@
+.header {
+    position: sticky; 
+    top: 0; 
+    padding: 15px; 
+    background-color: #eee;
+    text-align: center;
+    color: royalblue;
+    width: 100%; 
+}
