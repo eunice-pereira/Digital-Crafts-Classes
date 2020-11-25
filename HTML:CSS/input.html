@@ -1,0 +1,69 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style-UI.css">
+	</head>
+	<body>
+        <div class="header">
+            <h2>UI Practice</h2>
+        </div> 
+		<label
+			>Username
+			<input
+				id="username"
+				class="special"
+				name="username"
+				value="Username"
+				type="email"
+			/>
+		</label>
+
+		<label for="agree">
+			<input type="checkbox" id="agree" name="agree" value="Iagree" />
+			Agree to terms?
+		</label>
+        <div class="radio">
+            <label for="cars">Cars
+                <input id="cars" checked name="transport" value="cars" type="radio">
+            </label>
+            <label for="trains">Trains
+                <input id="trains" name="transport" value="trains" type="radio">
+            </label>
+            <label for="planes">Planes
+                <input id="planes" checked name="transport" value="planes" type="radio">
+            </label>
+        </div>
+            <label for="favorite-food">Favorite Food</label>
+            <select name="favorite-food" id="favorite-food">
+                <option value="">---Please Select a Food---</option>
+                <optgroup label="Italian">
+                    <option value="pizza">Pizza (Ninja Turtles)</option>
+                    <option value="mushrooms">Shrooms (Mario)</option>
+                </optgroup>
+                <optgroup label="Sweets">
+                    <option value="doughnut"> Doughnuts (Homer)</option>
+                </optgroup>
+                <optgroup label="Vegeterian">
+                </optgroup>
+            </select>
+            <div>
+                <label>Range</label>
+                <input type="range" id="myRange" name="volume" min="0" max="0" step="1" value="2"> 
+            </div>
+                <input type="color" id="text-color" name="text-color" value="#e66465">
+            <div>
+                <input type="date" id="birthday" name="birthday" value="1987-09-26">
+            </div>
+            <textarea cols="20" rows="10" placeholder="Tell me about yourself"></textarea>
+
+        </div>
+        <script>
+            let newOpt = document.createElement("option")
+            newOpt.value = "veggie burger"
+            newOpt.innerText = "veggie burger"
+            document.querySelector("#favorite-food").append(newOpt)
+        </script>
+	</body>
+</html>
